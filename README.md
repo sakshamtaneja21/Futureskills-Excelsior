@@ -33,7 +33,7 @@ We've used another Machine Learning model here which takes the following possibl
         - Soil Moisture
         - Soil Water Potential
         - Soil temperature
-    - Weather Sensors
+    - Weather Conditions
         - Rainfall
         - Wind Speed
         - Air Temperature
