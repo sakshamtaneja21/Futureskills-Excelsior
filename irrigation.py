@@ -17,6 +17,7 @@ plsr = PLSRegression(
 model = plsr.fit(X_train, y_train)
 
 def analyze(X_input):
+    global model
     inputs = pd.read_csv(X_input)
     pred = model.predict(inputs)
     return pred
