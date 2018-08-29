@@ -21,7 +21,7 @@ def analyze(X_input):
     pred = model.predict(inputs)
     return pred
 
-if __name__ == __main__:
+if __name__ == "__main__":
     # predict
     predict = analyze(X_test)
     # accuracy
