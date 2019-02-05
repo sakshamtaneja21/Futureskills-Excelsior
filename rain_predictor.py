@@ -35,6 +35,7 @@ def predict(tup):
     new_res = (result / 24) * 10
     probability_of_no_rainfall = (new_res * 0.5)
     print(1 - probability_of_no_rainfall)
+    return 1 - probability_of_no_rainfall
 
 
 init()
