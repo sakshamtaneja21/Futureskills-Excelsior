@@ -1,12 +1,12 @@
-# Futureskills-Excelsior
-Closed loop irrigation solution for farmers:
 
-Irrigating fields plays a vital role in crop yield. However, how much and when to irrigate is still
-moderated by the traditional knowledge for the farmers. Knowing how much water is actually
-required for a given crop for a particular soil type depends majorly on soil’s capacity to hold
+# Futureskills-Excelsior
+Closed-loop irrigation solution for farmers:
+
+Irrigating fields play a vital role in crop yield. However, how much and when to irrigate is still
+moderated by the traditional knowledge for the farmers. Knowing how much water is required for a given crop for a particular soil type depends majorly on soil’s capacity to hold
 moisture. 
 
-We've developed an IoT, AI based solution which can auto irrigate the fields for a given crop based
+We've developed an IoT, AI-based solution which can auto irrigate the fields for a given crop-based
 on the soil moisture content.
 
 We've come up with a solution to tackle ALL the features expected in the Aeris problem statement.
@@ -22,7 +22,7 @@ This document covers the following sections:
 
 ## Features
 1. `Know the moisture content in the soil using sensors.`
-This is achieved using soil moisture sensors that are immersed into the soil.
+This is achieved using soil moisture sensors that are immersed in the soil.
 2. `Predict the weather condition.`
 This is done using a Machine Learning model that has been trained on historical data for a region and predicts weather condition in real-time without the need for depending on the internet for information, hence the model gradually adapts better to the local weather of the particular area where it is installed.
 (a) If there will be rain, the motor remains OFF.
@@ -43,12 +43,12 @@ We've used another Machine Learning model here which takes the following possibl
         - Vapour Pressure Deficit
     - Crop Evapotranspiration
 
-    The model calculates the minutes of irrigation required and turns the motor ON for the required period if there's no chance of a rain, depending on how much water the crop lacks in real-time.
+    The model calculates the minutes of irrigation required and turns the motor ON for the required period if there's no chance of rain, depending on how much water the crop lacks in real-time.
 4. `Stop the motor when required soil moisture content has been achieved.`
 The system monitors the soil moisture content using sensors and stops the motor when the optimal amount of water has been achieved for the crop. It also takes into account the age of the crop since crops require different amounts of water during different phases in the growing period.
 
 5. `Automatic start and stop of the motor for irrigating water in the field.`
-The entire system is built to intelligently operate on its own without need for human intervention.
+The entire system is built to intelligently operate on its own without the need for human intervention.
 
 ## Hardware
 Following is a list of minimum hardware to realise a deployable working prototype of the system.
@@ -67,15 +67,15 @@ Following is a list of minimum hardware to realise a deployable working prototyp
 - Using Machine Learning, real-time analysis of the weather and soil is done.
 - Depending on the size of the field, an appropriate time is calculated and the motor is switched ON for the required amount of time.
 - The motor remains OFF if the system predicts a fair chance of rain. If it doesn't rain for a considerable amount of time, the motor is switched ON to supply the water required.
-- This process repeats at regular intervals till the crop is ready to be harvested.
+- This process repeats at regular intervals until the crop is ready to be harvested.
 
 ## Power efficient system
 We took several measures to increase the power efficiency of the system.
 - Rather than staying ON constantly, the nodes send requests at regular intervals to conserve battery life.
 - Solar panels can be incorporated at every node to further increase the autonomy of the system for longer periods without needing maintenance.
 
-## Water efficient system
-Since all the nodes communicate separately to the central device, drip/sprinkler can be switched ON only for the particular area requiring water, further conserving water and improving the accuracy of the system. This feature additonally requires a servomotor.
+## Water-efficient system
+Since all the nodes communicate separately to the central device, drip/sprinkler can be switched ON only for the particular area requiring water, further conserving water and improving the accuracy of the system. This feature additionally requires a servomotor.
 
 ## Secure system
 Each node can be equipped with a geo-fencing enabled alarm which goes ON in case a node leaves the vicinity of the field, alerting the owner of theft.
